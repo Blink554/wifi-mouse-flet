@@ -37,8 +37,8 @@ jobs:
 
     - name: Build Android APK
       run: |
-        # Passes auto-yes and targets the exact entry file in the src directory
-        yes | flet build apk src/main.py
+        # With main.py in the root, we run the native automated build command
+        yes | flet build apk
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
