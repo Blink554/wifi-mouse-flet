@@ -7,7 +7,7 @@ def main(page: ft.Page):
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     
     # Local PC testing configuration
-    PC_IP = "127.0.0.1" 
+    PC_IP = "10.201.205.60"
     PORT = 61234
 
     udp_client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
