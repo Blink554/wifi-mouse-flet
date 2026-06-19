@@ -1,0 +1,18 @@
+[tool.flet]
+# The name of the executable or application bundle
+app_name = "wifimouse"
+# The title of the application window on desktop / display name on mobile
+product_name = "Wi-Fi Mouse Controller"
+# A short description of the application
+description = "Control your PC mouse over Wi-Fi"
+# Your name or organization
+author = "Click"
+
+[tool.flet.android]
+# Unique package name for Android (no spaces, use dots)
+package_name = "com.click.wifimouse"
+# Build version configurations
+version = "1.0.0"
+build_number = 1
+# Permissions required for network communication
+permissions = ["INTERNET", "ACCESS_NETWORK_STATE"]
