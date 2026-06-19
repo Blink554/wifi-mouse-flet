@@ -7,7 +7,7 @@ pyautogui.FAILSAFE = False
 
 def start_server():
     # Local PC testing configuration
-    IP_ADDRESS = "127.0.0.1"  
+    IP_ADDRESS = "10.201.205.60"
     PORT = 61234
 
     server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
