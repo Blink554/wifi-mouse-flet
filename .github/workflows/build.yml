@@ -37,5 +37,11 @@ jobs:
 
     - name: Build Android APK
       run: |
-        # Auto-approves the Flutter SDK download prompt inside GitHub Actions
-        yes | flet build apk
+        # Passes auto-yes and targets the exact entry file in the src directory
+        yes | flet build apk src/main.py
+
+    - name: Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: wifimouse-app
+        path: build/apk/*.apk
