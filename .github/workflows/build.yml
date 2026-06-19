@@ -31,11 +31,13 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
 
-    
+    - name: Accept Android SDK Licenses
+      run: |
+        yes | sdkmanager --licenses
+
     - name: Build Android APK
       run: |
-        # Bypasses interactive terminal prompts for automated environments
-        flet build apk --no-interactive
+        flet build apk
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
